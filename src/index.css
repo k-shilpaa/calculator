@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+  background: #f3f1ed;
+}
+
+.calculator {
+  width: 320px;
+  padding: 24px;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.calculator input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px 16px;
+  margin-bottom: 14px;
+  border: none;
+  outline: none;
+  border-radius: 14px;
+  background: #f5f5f5;
+  font-family: inherit;
+  font-size: 26px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.buttons button {
+  padding: 18px;
+  border: none;
+  border-radius: 12px;
+  font-family: inherit;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  background: #f1f0ee;
+  transition: transform 0.1s ease, filter 0.1s ease;
+}
+
+.buttons button:hover {
+  filter: brightness(0.96);
+}
+
+.buttons button:active {
+  transform: scale(0.96);
+}
+
+
+.clear-btn {
+  grid-column: span 2;
+  background: #f5b5ad !important;
+}
+
+.delete-btn {
+  background: #e8e5df !important;
+}
+
+
+.equals-btn {
+  background: #a78ef9 !important;
+  color: white;
+}
+
+.equals-btn:hover {
+  filter: brightness(1.15);
+}
